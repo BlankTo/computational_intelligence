@@ -7,4 +7,4 @@ i also tried to add symmetries, but without good results. I think because of som
 then i tried with minmax, which was much more slower until i added a dictionary of (state -> move) to speed up the process. the dictionary is filled while the minmax compute the max_value of each state in depth. If some states are not considered in the initialization, they are added to the dictionary while playing. The results are better and the algorythm is very fast. File: lab_10_minmax.ipynb
 
 
-Finally, i checked who would win between montecarlo and minmax. The result is a draw (i kept 1000 games by mistake, but there is no random, so each game is equal). File: lab_10_montecarlo_vs_minmax.ipynb
+Finally, i checked who would win between montecarlo and minmax. The result vary depending on the training of montecarlo, so i trained multiple times. with less training, minmax perform better. With more time to train montecarlo, the two become similar, but at this point minmax is way faster. File: lab_10_montecarlo_vs_minmax.ipynb
